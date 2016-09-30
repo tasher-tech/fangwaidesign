@@ -1,0 +1,41 @@
+.line{
+    width:100%;
+}
+
+.line .column{
+	float: left;
+    _display: inline;
+}
+.line .column span{
+	display: block;
+	position: relative;
+}
+.line .column img{
+	float:none;
+	display: block;
+}
+.line .column .opacity_show{
+	display: none;
+    background: url('../img/color_opacity.png') repeat;
+    line-height: 18px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff
+}
+
+.line .column .opacity_show strong{
+	display: block;
+    height: 30px;
+    line-height: 30px;
+	position: relative;
+    top:50%;
+    margin-top: -15px;
+	text-align: center;
+    color: #dadada;
+    font-size: 12px;
+}ß

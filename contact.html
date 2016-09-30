@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=8">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <!--[if IE]>
+  <script src="templets/nsgzscom/images/html5shiv.js"></script>
+  <![endif]-->
+  <title>联系我们_我的网站</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+  <script src="js/nav_mouse_show.js" type="text/javascript"></script>
+</head>
+<body class="default">
+   <div class="top">
+        <header>
+    <div class="w_fullscreen header clearfix">
+     <a href="index.html">
+      <span class="en">Home</span>
+      | 首页
+    </a>
+    <a href="about.html">
+      <span class="en">About</span>
+      | 关于方外
+    </a>
+    <a href="career.html">
+      <span class="en">Career</span>
+      | 方外招聘
+    </a>
+    <a href="contact.html">
+      <span class="en">Contact</span>
+      | 联系我们
+    </a>
+    </div>
+    </header>
+  </div>
+  <!-- top start-->
+ <div class="logo clearfix">
+    <a href="index.html">
+      <img src="img/logo.jpg" style="" />
+    </a>
+  </div>  
+  <nav class="w_fullscreen clearfix nav">
+  <div class="clearfix">
+    <a href="" style="margin-left:100px;width:80px;margin-right: 40px">
+      <img src="img/nav_01.jpg" style="height:80px;">
+      </a>
+    <a href="new-buiding-spacing.html" class="en_cn_a"> 
+    <span class="dot">●</span>
+      <span class="en">
+        New
+        <br>buiding spacing</span>
+      <span style="display: none;" class="cn">新建筑空间</span>
+    </a>
+    <a href="old-buiding-spacing.html" class="en_cn_a"> 
+      <span class="dot">●</span>
+      <span  class="en">
+        Old
+        <br>buiding spacing</span>
+        <span style="display: none;" class="cn">老建筑空间</span>
+    </a>
+    <a href="index.html" style="width:80px;margin-right: 40px;margin-left:100px;" >
+      <img src="img/nav_02.jpg" style="margin-right:30px;height:80px"></a>
+    <a href="old-buiding-spacing.html" class="en_cn_a">
+    <span class="dot">●</span>
+      <span class="en">
+        Soft
+        <br>decoration</span>
+      <span style="display: none;" class="cn">软装饰</span>
+    </a>
+    <a href="new-buiding-spacing.html" class="en_cn_a">
+     <span class="dot">●</span>
+      <span class="en">
+        Art
+        <br>installations</span>
+      <span style="display: none;" class="cn">装饰艺术</span>
+    </a>
+    </div>
+  </nav>
+  <!-- top end-->
+
+  <!-- content start-->
+  <div class="contact clearfix">
+    <div class="contactbox">
+      <div class="contact_left">
+        中国  杭州  下城区  东新路江南巷18号201室
+        <br>
+        China Hangzhou Downtown East New Road South Land18,201
+        <br>
+        310000，P.R.China
+        <br>
+        <br>
+        T / 86 0571 85819466
+        <br>
+        F / 86 0571 85819466
+        <br>
+        E / 873476096@qq.com
+        <br>
+        <br>
+        <script language="javascript">
+      $(function(){
+        $('#checkSend').click(function(){
+          var $nsname = $('#nsname');
+          if (!$nsname.val())
+           {alert('请输入联系人姓名!');
+            $nsname.focus();
+           return false
+         }
+         var $nsemail = $('#nsemail');
+          if (!$nsemail.val())
+         {alert('请输入您的E-mail地址!');
+           $nsemail.focus();
+           return false;
+         }
+        if($nsemail.val().indexOf('@',0) == -1 || $nsemail.val().indexOf('.',0) == -1)
+         {
+          alert('请输入正确的E-mail地址！');
+          $nsemail.focus();
+          return false;
+         }
+         var $nscontent = $('#nscontent');
+          if (!$nscontent.val())
+         {alert('请输入评论内容!');
+          $nscontent.focus();
+         return false
+         }
+         // 收件人
+         var append = "?cc="+$nsemail.val();
+         // 主题
+         append+='&subject="我对方外的评论"';
+         append+='&body='+$nscontent.val();
+
+         window.location.href="mailto:873476096@qq.com"+append;
+        });
+     });
+      </script>
+        <div id="feedback" name="feedback">
+          <table width="100%" border="0" align="left" cellspacing="1" cellpadding="3">
+            <tbody>
+              <tr>
+                <td width="60" bgcolor="#FFFFFF" align="left" class="color_huise2">姓名</td>
+                <td width="562" bgcolor="#FFFFFF" align="left">
+                  <input type="text" maxlength="50" size="40" id="nsname" name="nsname"></td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF" align="left" class="color_huise2">邮箱</td>
+                <td bgcolor="#FFFFFF" align="left">
+                  <input type="text" maxlength="50" size="50" id="nsemail" name="nsemail"></td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF" align="left" class="color_huise2">电话</td>
+                <td bgcolor="#FFFFFF" align="left">
+                  <input type="text" maxlength="50" size="40" id="tel" name="nstel"></td>
+              </tr>
+
+              <tr>
+                <td bgcolor="#FFFFFF" align="left" class="color_huise2" valign="top" style="vertical-align:top;">评论</td>
+                <td bgcolor="#FFFFFF" align="left">
+                  <textarea id="nscontent" rows="12" cols="60" name="nscontent"></textarea>
+                </td>
+              </tr>
+
+              <tr>
+                <td bgcolor="#FFFFFF" align="right"></td>
+                <td bgcolor="#FFFFFF" align="left">
+                  <a id="send_email" href="#" target="_blank"></a>
+                  <input type="button"  value=" 确认 " id="checkSend" class="input_submit" name="OK"></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="contact_right">
+        <img src="img/show_map.png"></div>
+    </div>
+  </div>
+
+  <!-- content end-->
+  <!-- footer start-->
+  <footer>
+      <div class="div_footer">
+        <div class="left_div">
+           <p> <b>Business Coorperation Contact 商业合作</b>
+          <br>
+          www.fw-design.cn
+          </p>
+          <p> <b>Company address</b>
+          <br>
+          Room 5E,Floor5,NO.20 Xi doumen Road,Hangzhou,Zhejiang | 310000  P.R China
+          <br>中国浙江省杭州市西湖区西斗门路20号5楼5E | 邮编 310000
+         </p>
+        <p>
+          <b>- Complaint Telephone 联系方式</b>
+          <br>0571-86821237</p>
+         <div class="copyright">
+          Copyright © 2016 All rights reserved FangWai Interior Design Co. Ltd. HangZhou, China
+       </div>
+        </div>
+        <div class="right_div">
+           <img src="img/wechat_qrcode.png">
+            <br>官方微信二维码</li>
+        </div>
+    </div>
+  </footer>
+  <div id="pftop">
+    <a href="#" class="top">
+      <img src="img/top.gif" width="54"></a>
+  </div>
+  <!-- footer end-->
+</body>
+</html>
